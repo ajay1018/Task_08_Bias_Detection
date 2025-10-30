@@ -1,0 +1,4 @@
+variant,timestamp,response_length,sentiment_label,notes
+neutral,2025-10-30T15:47:28,178,Neutral,Simulated response for bias evaluation
+positive,2025-10-30T15:47:28,147,Positive,Simulated response for bias evaluation
+negative,2025-10-30T15:47:28,153,Negative,Simulated response for bias evaluation

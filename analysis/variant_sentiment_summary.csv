@@ -1,0 +1,4 @@
+variant,response_length,pos_hits,neg_hits,sentiment_proxy
+negative,153,0,2,-2
+neutral,178,0,0,0
+positive,147,2,0,2

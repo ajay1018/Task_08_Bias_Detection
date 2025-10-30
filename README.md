@@ -32,3 +32,11 @@ Design a **controlled experiment** to test whether prompt framing changes LLM-ge
 - `docs/REPORT.md` → final write-up (Nov 15)
 
 *This README reflects Oct 15 planning only.*
+## Oct 30  Progress Snapshot
+- Generated prompt matrix with IDs (prompts/prompt_plan.csv) and compiled prompts.
+- Created framing variants and simulated LLM responses (esults/raw/response_*.txt).
+- Logged runs (esults/logs/bias_responses_log.csv).
+- Scored sentiment by variant and saved outputs:
+  - nalysis/variant_sentiment_summary.csv
+  - nalysis/variant_sentiment_proxy.png
+- Next: collect 3 real responses per variant/model label and re-run analysis.
