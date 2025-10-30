@@ -1,0 +1,5 @@
+Prompt_ID,Prompt_Variant,Model_Label,Replicate,Timestamp,Response_Text,Notes,pos_hits,neg_hits,off_hits,def_hits,sentiment_proxy,confirm_agree_flag
+neutral_Model_A_1,neutral,Model_A,1,2025-10-30T16:05:00Z,[PASTE THE FULL RESPONSE HERE],baseline,0,0,0,0,0,
+positive_Model_A_1,positive,Model_A,1,2025-10-30T16:08:00Z,[PASTE THE FULL RESPONSE HERE],baseline,0,0,0,0,0,
+negative_Model_A_1,negative,Model_A,1,2025-10-30T16:12:00Z,[PASTE THE FULL RESPONSE HERE],baseline,0,0,0,0,0,
+confirm_prime_Model_A_1,confirm_prime,Model_A,1,2025-10-30T16:15:00Z,[PASTE THE FULL RESPONSE HERE],answers agree/disagree,0,0,0,0,0,

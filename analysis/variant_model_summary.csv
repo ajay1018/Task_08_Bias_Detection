@@ -1,0 +1,5 @@
+Prompt_Variant,Model_Label,sentiment_proxy,pos_hits,neg_hits,off_hits,def_hits,confirm_agree_flag
+confirm_prime,Model_A,0.0,0.0,0.0,0.0,0.0,
+negative,Model_A,0.0,0.0,0.0,0.0,0.0,
+neutral,Model_A,0.0,0.0,0.0,0.0,0.0,
+positive,Model_A,0.0,0.0,0.0,0.0,0.0,

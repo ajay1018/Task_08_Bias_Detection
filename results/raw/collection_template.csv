@@ -1,0 +1,6 @@
+﻿Prompt_ID,Prompt_Variant,Model_Label,Replicate,Timestamp,Response_Text,Notes
+neutral_Model_A_1,neutral,Model_A,1,2025-10-30T16:05:00Z,"[PASTE THE FULL RESPONSE HERE]",baseline
+positive_Model_A_1,positive,Model_A,1,2025-10-30T16:08:00Z,"[PASTE THE FULL RESPONSE HERE]",baseline
+negative_Model_A_1,negative,Model_A,1,2025-10-30T16:12:00Z,"[PASTE THE FULL RESPONSE HERE]",baseline
+confirm_prime_Model_A_1,confirm_prime,Model_A,1,2025-10-30T16:15:00Z,"[PASTE THE FULL RESPONSE HERE]",answers agree/disagree
+
