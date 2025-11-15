@@ -1,42 +1,132 @@
-# Task 08 – Bias Detection in LLM Data Narratives
+# 🧪 SU OPT Research – Bias Detection in LLM Narratives (Task 08)
 
-## Objective (Oct 15 – Initial Planning)
-Design a **controlled experiment** to test whether prompt framing changes LLM-generated narratives on the *same data*. Focus: **framing effects** and **confirmation bias** using anonymized sports stats from earlier tasks. No execution yet—planning only.
+This repository contains my research work for **Task 08** of the Syracuse University OPT Research Program.  
+The goal of this task is to **design and execute a controlled experiment** that detects whether a Large Language Model (LLM) produces **biased narratives** when given identical data but differently framed questions.
 
-## Ethics & Compliance
-- No PII or real names. All entities will be anonymized as **Player A, Player B, ...**.
-- Source datasets are **excluded** from the repo; only **anonymized derived** data is used.
-- Prompts avoid protected attributes unless using synthetic, non-identifying placeholders.
+The work is completed in **three stages**:
 
-## Planned Hypotheses
-- **H1 (Framing):** “Underperforming” vs “High-potential” wording results in systematically different recommendations for the same player profile.
-- **H2 (Confirmation):** Priming the model with a hypothesis (“Player C struggles defensively”) increases supportive evidence language vs. neutral framing.
-- **H3 (Selection emphasis):** Negative framing increases reference to turnovers/fouls; positive framing increases reference to assists/FG%.
+- **October 15** – Experimental planning, repository setup  
+- **October 30** – Prompt matrix design + initial bias detection pipeline  
+- **November 15** – Final experiment runs + full analysis + written report  
 
-## Experimental Design (Pre-registered)
-- **Dataset:** Anonymized 2023–24 team stats derived from Task 05 (no names).  
-- **Conditions per prompt set (minimally different wording):**  
-  - Neutral, Positive-framed, Negative-framed, Hypothesis-primed.
-- **Models:** At least 2 LLMs (e.g., GPT-4, Claude).  
-- **Replicates:** 3–5 samples/condition/model to average stochasticity.  
-- **Logging:** JSONL/CSV with prompt variant, response, model/version, timestamp.
+All data used in this project is **anonymized** and no raw datasets or PII are stored in the repository.
 
-## Deliverables Plan
-- `scripts/experiment_design.py` → auto-generate prompt variants from anonymized CSV
-- `scripts/run_experiment.py` → (later) run prompts against 2 LLMs, log JSONL
-- `scripts/analyze_bias.py` → (later) quantify framing effects (mentions/sentiment)
-- `scripts/validate_claims.py` → (later) cross-check claims vs stats
-- `prompts/` → final prompt templates (generated)
-- `results/` → raw outputs/logs (text/jsonl)
-- `analysis/` → summary tables & plots
-- `docs/REPORT.md` → final write-up (Nov 15)
+---
 
-*This README reflects Oct 15 planning only.*
-## Oct 30  Progress Snapshot
-- Generated prompt matrix with IDs (prompts/prompt_plan.csv) and compiled prompts.
-- Created framing variants and simulated LLM responses (esults/raw/response_*.txt).
-- Logged runs (esults/logs/bias_responses_log.csv).
-- Scored sentiment by variant and saved outputs:
-  - nalysis/variant_sentiment_summary.csv
-  - nalysis/variant_sentiment_proxy.png
-- Next: collect 3 real responses per variant/model label and re-run analysis.
+# 📁 Repository Structure
+
+Task_08_Bias_Detection/
+│
+├── data/ # anonymized data (local only, gitignored)
+│
+├── prompts/
+│ ├── variants/ # neutral / positive / negative versions
+│ ├── compiled/ # final prompts with dataset embedded
+│ └── prompt_plan.csv # prompt/run matrix
+│
+├── scripts/
+│ ├── create_prompt_matrix.py
+│ ├── open_prompt.py
+│ ├── run_final_bias_experiment.py
+│ ├── analyze_bias.py
+│ ├── score_sentiment_variants.py
+│ └── analyze_final_bias.py
+│
+├── results/
+│ ├── raw/ # LLM outputs (manual/simulated)
+│ ├── logs/ # tracking which prompt/model was run
+│ └── analysis/ # summary CSVs + visualizations
+│
+├── analysis/
+│ ├── final_bias_summary.csv
+│ ├── final_sentiment_boxplot.png
+│ └── final_sentiment_means.png
+│
+├── docs/
+│ └── TASK08_Final_Report.md # Full written report
+│
+└── README.md
+
+
+---
+
+# 🟦 **Stage 1 — October 15: Initial Planning & Setup**
+
+### ✔️ Completed
+- Created repository structure  
+- Added **safe `.gitignore`** to prevent committing PII/raw data  
+- Designed the initial experiment concept  
+- Defined framing conditions:
+  - Neutral  
+  - Positive  
+  - Negative  
+  - Confirmation-primed (planned)  
+- Created `responses_schema.csv` for structured LLM response logging  
+- Submitted mid-cycle Qualtrics + email  
+
+---
+
+# 🟧 **Stage 2 — October 30: Prompt Matrix & Early Experimentation**
+
+### ✔️ Completed
+- Implemented `create_prompt_matrix.py` to generate:
+  - Prompt variants  
+  - Embedded dataset into each prompt  
+  - Replicate runs  
+- Saved compiled prompts in `prompts/compiled/`  
+- Created `prompt_plan.csv` mapping every run  
+- Implemented simple sentiment scoring (positive/negative keywords)  
+- Ran initial (simulated) bias tests to validate the pipeline  
+- Logged early outputs in `results/logs/variant_test_log.csv`
+
+---
+
+# 🟥 **Stage 3 — November 15: Final Experiment & Analysis**
+
+### ✔️ Completed
+- Ran full framing experiment using:
+
+scripts/run_final_bias_experiment.py
+- Logged structured runs into:
+
+results/logs/final_bias_log.csv
+- Executed final sentiment scoring + variance analysis:
+
+scripts/analyze_final_bias.py
+- Generated:
+- `analysis/final_bias_summary.csv`
+- `analysis/final_sentiment_boxplot.png`
+- `analysis/final_sentiment_means.png`
+
+- Wrote full final report:
+docs/TASK08_Final_Report.md
+
+
+---
+
+# 📊 **Key Findings (High-Level)**
+
+- **Framing strongly shifts narrative tone**, even though the dataset is identical.
+- **Positive prompts** consistently produced more optimistic wording.
+- **Negative prompts** reinforced weaknesses and problems.
+- **Neutral prompts** generated the most consistent factual summaries.
+- Confirms that **LLMs are sensitive to question framing**, a reproducible form of prompt bias.
+
+For detailed analysis, see the full report:  
+📄 `docs/TASK08_Final_Report.md`
+
+---
+
+# 🛡️ Privacy & Compliance
+
+- All data is **anonymized** (Player A, Player B, …).  
+- No PII or raw university datasets are committed.  
+- `.gitignore` prevents committing sensitive/large files.  
+- Pipeline is API-agnostic and works with manual copy/paste collection.
+
+---
+
+# 🚀 Status: **Task 08 Completed ✔️**
+
+All deliverables for **Oct 15, Oct 30, and Nov 15** are fully completed, documented, and committed.
+
