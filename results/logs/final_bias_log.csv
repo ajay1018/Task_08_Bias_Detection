@@ -1,0 +1,10 @@
+variant,run,path,sentiment
+neutral,1,results/raw/round3_neutral_1.txt,-0.47517496427665673
+neutral,2,results/raw/round3_neutral_2.txt,0.49218826582597774
+neutral,3,results/raw/round3_neutral_3.txt,0.8948304797424966
+positive,1,results/raw/round3_positive_1.txt,-0.35054307641955385
+positive,2,results/raw/round3_positive_2.txt,0.8909510298152548
+positive,3,results/raw/round3_positive_3.txt,0.44601094629602467
+negative,1,results/raw/round3_negative_1.txt,-0.7735174254664079
+negative,2,results/raw/round3_negative_2.txt,-0.760012123304818
+negative,3,results/raw/round3_negative_3.txt,-0.12112364751827887
