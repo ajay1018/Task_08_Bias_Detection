@@ -15,6 +15,9 @@ All data used in this project is **anonymized** and no raw datasets or PII are s
 
 ## 📁 Repository Structure
 
+Below is the full directory layout for Task 08, formatted exactly as used in the project Jupyter Notebook:
+
+```python
 A("Task_08_Bias_Detection/")
 A("├─ prompts/")
 A("│  ├─ variants/")
@@ -45,7 +48,6 @@ A("│  └─ (combined experiment outputs)")
 A("├─ docs/")
 A("│  └─ TASK08_Final_Report.md")
 A("└─ README.md")
-
 
 ---
 
