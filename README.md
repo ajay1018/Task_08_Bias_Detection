@@ -13,7 +13,7 @@ All data used in this project is **anonymized** and no raw datasets or PII are s
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 Task_08_Bias_Detection/
 │
@@ -50,7 +50,7 @@ Task_08_Bias_Detection/
 
 ---
 
-# 🟦 **Stage 1 — October 15: Initial Planning & Setup**
+## 🟦 **Stage 1 — October 15: Initial Planning & Setup**
 
 ### ✔️ Completed
 - Created repository structure  
@@ -66,7 +66,7 @@ Task_08_Bias_Detection/
 
 ---
 
-# 🟧 **Stage 2 — October 30: Prompt Matrix & Early Experimentation**
+## 🟧 **Stage 2 — October 30: Prompt Matrix & Early Experimentation**
 
 ### ✔️ Completed
 - Implemented `create_prompt_matrix.py` to generate:
@@ -81,7 +81,7 @@ Task_08_Bias_Detection/
 
 ---
 
-# 🟥 **Stage 3 — November 15: Final Experiment & Analysis**
+## 🟥 **Stage 3 — November 15: Final Experiment & Analysis**
 
 ### ✔️ Completed
 - Ran full framing experiment using:
@@ -104,7 +104,7 @@ docs/TASK08_Final_Report.md
 
 ---
 
-# 📊 **Key Findings (High-Level)**
+## 📊 **Key Findings (High-Level)**
 
 - **Framing strongly shifts narrative tone**, even though the dataset is identical.
 - **Positive prompts** consistently produced more optimistic wording.
@@ -117,7 +117,7 @@ For detailed analysis, see the full report:
 
 ---
 
-# 🛡️ Privacy & Compliance
+## 🛡️ Privacy & Compliance
 
 - All data is **anonymized** (Player A, Player B, …).  
 - No PII or raw university datasets are committed.  
@@ -126,7 +126,7 @@ For detailed analysis, see the full report:
 
 ---
 
-# 🚀 Status: **Task 08 Completed ✔️**
+## 🚀 Status: **Task 08 Completed ✔️**
 
 All deliverables for **Oct 15, Oct 30, and Nov 15** are fully completed, documented, and committed.
 
