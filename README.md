@@ -15,46 +15,36 @@ All data used in this project is **anonymized** and no raw datasets or PII are s
 
 ## 📁 Repository Structure
 
-Task_08_Bias_Detection:
-  data:
-    - "(raw anonymized datasets – excluded from repo)"
-  
-  prompts:
-    variants:
-      - neutral/
-      - positive/
-      - negative/
-      - confirmation/
-    compiled:
-      - "(auto-generated prompt sets)"
-    - prompt_plan.csv
-
-  scripts:
-    - create_prompt_matrix.py
-    - open_prompt.py
-    - run_final_bias_experiment.py
-    - analyze_bias.py
-    - score_sentiment_variants.py
-    - analyze_final_bias.py
-
-  results:
-    raw:
-      - "(LLM raw outputs)"
-    logs:
-      - variant_test_log.csv
-      - final_bias_log.csv
-    analysis:
-      - final_bias_summary.csv
-      - final_sentiment_boxplot.png
-      - final_sentiment_means.png
-
-  analysis:
-    - "(consolidated CSVs + charts)"
-
-  docs:
-    - TASK08_Final_Report.md
-
-  README.md: "(main documentation)"
+A("Task_08_Bias_Detection/")
+A("├─ prompts/")
+A("│  ├─ variants/")
+A("│  │  ├─ neutral/")
+A("│  │  ├─ positive/")
+A("│  │  ├─ negative/")
+A("│  │  └─ confirmation/")
+A("│  ├─ compiled/")
+A("│  └─ prompt_plan.csv")
+A("├─ scripts/")
+A("│  ├─ create_prompt_matrix.py")
+A("│  ├─ open_prompt.py")
+A("│  ├─ run_final_bias_experiment.py")
+A("│  ├─ analyze_bias.py")
+A("│  ├─ score_sentiment_variants.py")
+A("│  └─ analyze_final_bias.py")
+A("├─ results/")
+A("│  ├─ raw/")
+A("│  ├─ logs/")
+A("│  │  ├─ variant_test_log.csv")
+A("│  │  └─ final_bias_log.csv")
+A("│  └─ analysis/")
+A("│     ├─ final_bias_summary.csv")
+A("│     ├─ final_sentiment_boxplot.png")
+A("│     └─ final_sentiment_means.png")
+A("├─ analysis/")
+A("│  └─ (combined experiment outputs)")
+A("├─ docs/")
+A("│  └─ TASK08_Final_Report.md")
+A("└─ README.md")
 
 
 ---
