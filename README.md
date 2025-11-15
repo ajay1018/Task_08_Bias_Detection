@@ -16,35 +16,45 @@ All data used in this project is **anonymized** and no raw datasets or PII are s
 ## 📁 Repository Structure
 
 Task_08_Bias_Detection/
-├─ prompts/
-│  ├─ variants/
-│  │  ├─ neutral/
-│  │  ├─ positive/
-│  │  ├─ negative/
-│  │  └─ confirmation/
-│  ├─ compiled/
-│  └─ prompt_plan.csv
-├─ scripts/
-│  ├─ create_prompt_matrix.py
-│  ├─ open_prompt.py
-│  ├─ run_final_bias_experiment.py
-│  ├─ analyze_bias.py
-│  ├─ score_sentiment_variants.py
-│  └─ analyze_final_bias.py
-├─ results/
-│  ├─ raw/
-│  ├─ logs/
-│  │  ├─ variant_test_log.csv
-│  │  └─ final_bias_log.csv
-│  └─ analysis/
-│     ├─ final_bias_summary.csv
-│     ├─ final_sentiment_boxplot.png
-│     └─ final_sentiment_means.png
-├─ analysis/
-│  └─ (combined experiment outputs)
-├─ docs/
-│  └─ TASK08_Final_Report.md
-└─ README.md
+│
+├── data/
+│ └── (raw anonymized datasets – NOT in repo)
+│
+├── prompts/
+│ ├── variants/
+│ │ ├── neutral/
+│ │ ├── positive/
+│ │ ├── negative/
+│ │ └── confirmation/
+│ ├── compiled/
+│ └── prompt_plan.csv
+│
+├── scripts/
+│ ├── create_prompt_matrix.py
+│ ├── open_prompt.py
+│ ├── run_final_bias_experiment.py
+│ ├── analyze_bias.py
+│ ├── score_sentiment_variants.py
+│ └── analyze_final_bias.py
+│
+├── results/
+│ ├── raw/
+│ ├── logs/
+│ │ ├── variant_test_log.csv
+│ │ └── final_bias_log.csv
+│ └── analysis/
+│ ├── final_bias_summary.csv
+│ ├── final_sentiment_boxplot.png
+│ └── final_sentiment_means.png
+│
+├── analysis/
+│ └── (consolidated charts + summary CSVs)
+│
+├── docs/
+│ └── TASK08_Final_Report.md
+│
+└── README.md
+
 ---
 
 ## 🟦 **Stage 1 — October 15: Initial Planning & Setup**
